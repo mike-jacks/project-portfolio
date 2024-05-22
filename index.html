@@ -4,44 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.4/css/pico.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <ul id="nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h1 id="about">About Me</h1>
-    <p>Hi, I'm Mike. I'm learning to become a Web Developer utilizing tools like React, Python, TypeScript, and TailwindCSS.</p>
-    <h2 id="projects">Projects</h2>
-    <div>
-      <h3><a href="https://github.com/mike-jacks/gym-app" target="_blank" rel="noopener noreferrer">Gym APP</a></h3>
-      <p>A FastAPI application that helps track workouts.</p>
-    </div>
-    <div>
+    <article>
+      <h2 id="about">About Me</h2>
+      <p>Hi, I'm Mike. I'm learning to become a Web Developer utilizing tools like React, Python, TypeScript, and TailwindCSS.</p>
+    </article>
+
+    <main>
+      <h2 id="projects">Projects</h2>
+      <div>
+        <h3><a href="https://github.com/mike-jacks/gym-app" target="_blank" rel="noopener noreferrer">Gym APP</a></h3>
+        <p>A FastAPI application that helps track workouts.</p>
+      </div>
       <h3><a href="https://github.com/mike-jacks/interactive-story" target="_blank" rel="noopener noreferrer">Interactive Story</a></h3>
       <p>
         An Interactive story/game that mimics a basic waterdown unix terminal with a messaging service from another hacker giving hacking
         instructions.
       </p>
-    </div>
-    <div>
-      <h3><a href="https://github.com/mike-jacks/SCRAPER" target="_blank" rel="noopener noreferrer">SCRAPER</a></h3>
-      <p>A Web Scraper terminal application that gets title and description from navigation links on a given webpage.</p>
-    </div>
-    <h2 id="contact">Contact Me</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" />
-      <label for="message">Message:</label>
-      <textarea name="message" id="message"></textarea>
-      <button type="submit">Submit</button>
-    </form>
+      <div>
+        <h3><a href="https://github.com/mike-jacks/SCRAPER" target="_blank" rel="noopener noreferrer">Scraper</a></h3>
+        <p>A Web Scraper terminal application that gets title and description from navigation links on a given webpage.</p>
+      </div>
+    </main>
+
+    <section>
+      <h2 id="contact">Contact Me</h2>
+      <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
     <footer>
       <p>&copy; 2024 Michael Jacks. All rights reserved.</p>
     </footer>
