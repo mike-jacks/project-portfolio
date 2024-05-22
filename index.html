@@ -4,10 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <html>
+    <body>
+      <div id="container">
+        <div id="info_and_main">
+          <div id="info" class="content">
+            <img src="#" alt="memoji" />
+            <h1>Mike Jacks</h1>
+            <h2>Web Developer</h2>
+            <div id="divider">
+              <hr/>
+            </div>
+            <div id="email">
+              <img src="#" alt="email icon" />
+              <div>
+                <p>EMAIL</p>
+                <p>mikejacks@me.com</p>
+              </div>
+            </div>
+            <div id="phone">
+              <img src="#" alt="phone icon">
+              <div>
+                <p>PHONE</p>
+                <p>555-123-4567</p>
+              </div>
+            </div>
+            <div id="location">
+              <img src="#" alt="location icon">
+              <div>
+                <p>LOCATION</p>
+                <p>St George,<br>Utah, USA</p>
+              </div>
+            </div>
+          </div>
+
+        <div id="main" class="content">
+          <nav id="nav">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div id="content">
+            <section>
+              <h2 id="about_section">About Me</h2>
+              <p>Hi, I'm Mike. I'm learning to become a Web Developer utilizing tools like React, Python, TypeScript, and TailwindCSS.</p>
+            </section>
+        
+            <section>
+              <h2 id="projects_section">Projects</h2>
+              <div>
+                <h3><a href="https://github.com/mike-jacks/gym-app" target="_blank" rel="noopener noreferrer">Gym APP</a></h3>
+                <p>A FastAPI application that helps track workouts.</p>
+              </div>
+              <h3><a href="https://github.com/mike-jacks/interactive-story" target="_blank" rel="noopener noreferrer">Interactive Story</a></h3>
+              <p>
+                An Interactive story/game that mimics a basic waterdown unix terminal with a messaging service from another hacker giving hacking
+                instructions.
+              </p>
+              <div>
+                <h3><a href="https://github.com/mike-jacks/SCRAPER" target="_blank" rel="noopener noreferrer">Scraper</a></h3>
+                <p>A Web Scraper terminal application that gets title and description from navigation links on a given webpage.</p>
+              </div>
+            </section>
+        
+            <section id="contact_section">
+              <h2 id="contact">Contact Me</h2>
+              <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer class="content">
+        <p>&copy; 2024 Michael Jacks. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+  </html>
+
+<!-- 
+
     <header>
       <nav>
         <ul>
@@ -40,7 +127,7 @@
       </div>
     </main>
 
-    <section>
+    <section id="conatact_section">
       <h2 id="contact">Contact Me</h2>
       <form id="form">
         <label for="name">Name:</label>
@@ -58,3 +145,4 @@
     </footer>
   </body>
 </html>
+

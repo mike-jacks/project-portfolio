@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(200, 200, 200);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 17, 17);
+  border-radius: 10px;
+  margin: 10px;
+  color: rgb(242, 242, 242);
+  margin: 1em;
+  padding: 3vw;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.5);
+  gap: 20px;
+}
+
+#info_and_main {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(30, 30, 30);
+}
+
+.content {
+  background-color: rgb(30, 30, 30);
+  border-radius: 20px;
+  padding: 20px;
+}
