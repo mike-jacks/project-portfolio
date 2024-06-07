@@ -7,6 +7,8 @@ body {
   color: rgb(220, 220, 220);
   font-family: "Roboto", sans-serif;
   font-size: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -52,7 +54,8 @@ div.container {
   padding: 3vw;
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.5);
   gap: 20px;
-  flex-grow: 1;
+  flex-grow: 0;
+  align-self: center;
 }
 
 div#title p {
@@ -262,4 +265,11 @@ textarea {
 #message {
   width: 50%;
   height: 100px;
+}
+
+.invisible-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-self: center;
 }

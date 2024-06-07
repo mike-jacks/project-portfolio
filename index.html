@@ -12,124 +12,126 @@
   <html>
     <body>
       <div class="container">
-        <div id="info_and_main">
-          <div id="info" class="content">
-            <div id="profile_image">
-              <img src="./mike_memoji_2.png" alt="memoji" width="180px" />
-            </div>
-            <h2>Mike Jacks</h2>
-            <div id="title">
-              <p><small>Web Developer</small></p>
-            </div>
-            <div id="divider">
-              <hr />
-            </div>
-            <div id="icons_column">
-              <div id="email_card" class="info_card">
-                <div id="email_icon" class="corner_highlight_border side_bar_icon">
-                  <i class="far fa-envelope icon"></i>
+        <div class="invisible-container">
+          <div id="info_and_main">
+            <div id="info" class="content">
+              <div id="profile_image">
+                <img src="./mike_memoji_2.png" alt="memoji" width="180px" />
+              </div>
+              <h2>Mike Jacks</h2>
+              <div id="title">
+                <p><small>Web Developer</small></p>
+              </div>
+              <div id="divider">
+                <hr />
+              </div>
+              <div id="icons_column">
+                <div id="email_card" class="info_card">
+                  <div id="email_icon" class="corner_highlight_border side_bar_icon">
+                    <i class="far fa-envelope icon"></i>
+                  </div>
+                  <div id="email_info" class="info">
+                    <p class="label"><small>EMAIL</small></p>
+                    <a href="mailto:mikejacks@me.com">mikejacks@me.com</a>
+                  </div>
                 </div>
-                <div id="email_info" class="info">
-                  <p class="label"><small>EMAIL</small></p>
-                  <a href="mailto:mikejacks@me.com">mikejacks@me.com</a>
+                <div id="phone_card" class="info_card">
+                  <div id="phone_icon" class="corner_highlight_border side_bar_icon">
+                    <i class="fas fa-mobile-alt icon"></i>
+                  </div>
+                  <div id="phone_info" class="info">
+                    <p class="label"><small>PHONE</small></p>
+                    <a href="tel+15551234567">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+                <div id="location_card" class="info_card">
+                  <div id="location_icon" class="corner_highlight_border side_bar_icon">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                  </div>
+                  <div id="location_info" class="info">
+                    <p class="label"><small>LOCATION</small></p>
+                    <p>St George,<br />Utah, USA</p>
+                  </div>
                 </div>
               </div>
-              <div id="phone_card" class="info_card">
-                <div id="phone_icon" class="corner_highlight_border side_bar_icon">
-                  <i class="fas fa-mobile-alt icon"></i>
-                </div>
-                <div id="phone_info" class="info">
-                  <p class="label"><small>PHONE</small></p>
-                  <a href="tel+15551234567">+1 (555) 123-4567</a>
-                </div>
-              </div>
-              <div id="location_card" class="info_card">
-                <div id="location_icon" class="corner_highlight_border side_bar_icon">
-                  <i class="fas fa-map-marker-alt icon"></i>
-                </div>
-                <div id="location_info" class="info">
-                  <p class="label"><small>LOCATION</small></p>
-                  <p>St George,<br />Utah, USA</p>
-                </div>
+            </div>
+
+            <div id="main" class="content">
+              <nav id="nav">
+                <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <div id="content">
+                <section>
+                  <h2 id="about_section">About Me</h2>
+                  <p>
+                    Hi, I'm Mike. I'm learning to become a Web Developer utilizing tools like React, Python, TypeScript, and TailwindCSS.<br />
+                    Below are links to some of my github repository projects.
+                  </p>
+                </section>
+
+                <section id="projects">
+                  <h2>Projects</h2>
+                  <div class="cards">
+                    <div class="card">
+                      <i class="fas fa-dumbbell icon card_icon"></i>
+                      <div>
+                        <h3>
+                          <a href="https://github.com/mike-jacks/gym-app" target="_blank" rel="noopener noreferrer">Gym APP</a>
+                        </h3>
+                        <p>A FastAPI application that helps track workouts.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <i class="fas fa-laptop-code icon card_icon"></i>
+                      <div>
+                        <h3>
+                          <a href="https://github.com/mike-jacks/interactive-story" target="_blank" rel="noopener noreferrer">Interactive Story</a>
+                        </h3>
+                        <p>
+                          An Interactive story/game that mimics a basic waterdown unix terminal with a messaging service from another hacker giving
+                          hacking instructions.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <i class="fas fa-spider icon card_icon"></i>
+                      <div>
+                        <h3>
+                          <a href="https://github.com/mike-jacks/SCRAPER" target="_blank" rel="noopener noreferrer">Web Scraper</a>
+                        </h3>
+                        <p>A Web Scraper terminal application that gets title and description from navigation links on a given webpage.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section id="contact_section">
+                  <h2 id="contact">Contact Me</h2>
+                  <form
+                    id="form"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePeg6FJg9S_VGv4PvV_mZ1vSoSH5V9-2vZAiZN4g-guk91xQ/formResponse"
+                    method="POST"
+                  >
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="entry.1551294985" required />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="entry.787355201" required />
+                    <label for="message">Message:</label>
+                    <textarea name="entry.737004566" id="message" required></textarea>
+                    <button type="submit" onclick="">Submit</button>
+                  </form>
+                </section>
               </div>
             </div>
           </div>
-
-          <div id="main" class="content">
-            <nav id="nav">
-              <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-            <div id="content">
-              <section>
-                <h2 id="about_section">About Me</h2>
-                <p>
-                  Hi, I'm Mike. I'm learning to become a Web Developer utilizing tools like React, Python, TypeScript, and TailwindCSS.<br />
-                  Below are links to some of my github repository projects.
-                </p>
-              </section>
-
-              <section id="projects">
-                <h2>Projects</h2>
-                <div class="cards">
-                  <div class="card">
-                    <i class="fas fa-dumbbell icon card_icon"></i>
-                    <div>
-                      <h3>
-                        <a href="https://github.com/mike-jacks/gym-app" target="_blank" rel="noopener noreferrer">Gym APP</a>
-                      </h3>
-                      <p>A FastAPI application that helps track workouts.</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-laptop-code icon card_icon"></i>
-                    <div>
-                      <h3>
-                        <a href="https://github.com/mike-jacks/interactive-story" target="_blank" rel="noopener noreferrer">Interactive Story</a>
-                      </h3>
-                      <p>
-                        An Interactive story/game that mimics a basic waterdown unix terminal with a messaging service from another hacker giving
-                        hacking instructions.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <i class="fas fa-spider icon card_icon"></i>
-                    <div>
-                      <h3>
-                        <a href="https://github.com/mike-jacks/SCRAPER" target="_blank" rel="noopener noreferrer">Web Scraper</a>
-                      </h3>
-                      <p>A Web Scraper terminal application that gets title and description from navigation links on a given webpage.</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="contact_section">
-                <h2 id="contact">Contact Me</h2>
-                <form
-                  id="form"
-                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePeg6FJg9S_VGv4PvV_mZ1vSoSH5V9-2vZAiZN4g-guk91xQ/formResponse"
-                  method="POST"
-                >
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="entry.1551294985" required />
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="entry.787355201" required />
-                  <label for="message">Message:</label>
-                  <textarea name="entry.737004566" id="message" required></textarea>
-                  <button type="submit" onclick="">Submit</button>
-                </form>
-              </section>
-            </div>
-          </div>
+          <footer class="content">
+            <p>&copy; 2024 Michael Jacks. All rights reserved.</p>
+          </footer>
         </div>
-        <footer class="content">
-          <p>&copy; 2024 Michael Jacks. All rights reserved.</p>
-        </footer>
       </div>
     </body>
   </html>
